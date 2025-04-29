@@ -119,6 +119,7 @@ fn main() {
         .register_op("gelu", op::activation::GeLU)
         .register_op("linear", op::linear::Linear)
         .register_op("rope", op::rope::Rope)
+        .register_op("concat", op::concat::Concat)
         .build(
             llama,
             [
